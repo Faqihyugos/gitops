@@ -15,5 +15,5 @@ spec:
             type: PathPrefix
             value: /
       backendRefs:
-        - name: svc
-          port: 80
+        - name: backend-go-svc
+          port: 8082
