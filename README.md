@@ -48,5 +48,5 @@ Repositori ini mengelola seluruh manifest Kubernetes secara **deklaratif** berba
 - **Akses Langsung**:
   Aplikasi `backend-go` dapat diakses langsung dari browser dan terminal:
   ```bash
-  curl -i http://localhost/healthz
+  curl -i http://localhost:8082/healthz
   ```

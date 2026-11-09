@@ -34,8 +34,8 @@ spec:
                   containers:
                     - name: envoy
                       ports:
-                        - containerPort: 80
-                          hostPort: 80
+                        - containerPort: 8082
+                          hostPort: 8082
 ---
 # GatewayClass — controller Envoy Gateway mengacu ke EnvoyProxy config
 apiVersion: gateway.networking.k8s.io/v1
@@ -61,7 +61,7 @@ spec:
   listeners:
     - name: http
       protocol: HTTP
-      port: 80
+      port: 8082
       allowedRoutes:
         kinds:
           - kind: HTTPRoute
